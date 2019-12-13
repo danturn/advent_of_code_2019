@@ -1,6 +1,7 @@
 #! /bin/bash
-function join_by { local IFS=","; shift; echo "$*"; }
+#This is extremely slow!
 
+function join_by { local IFS=","; shift; echo "$*"; }
 function calculate {
   array=$1;
   array[1]=$2;
